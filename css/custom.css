@@ -10,9 +10,8 @@ h1,h2,h3,h4,h5{
   padding: 40px 15px;
   text-align: center;
 }
-.navbar-inverse{
-  border-bottom-color: #e203e9;
-}
-.navbar-fixed-top{
-  border-width: 0 0 2px;
+.colored-line{
+  height: 2px;
+  background: #1c1d1d;
+  background: linear-gradient(to right,  #1c1d1d 0%,#01db0c 22%,#e203e9 64%,#460349 100%);
 }

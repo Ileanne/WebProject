@@ -11,7 +11,7 @@
 	color: transparent;
 	display: block;
 	text-transform: uppercase;
-	text-shadow: 0px 0px 4px #fff;
+	text-shadow: 0px 0px 4px #000;
   text-decoration: none;
 	letter-spacing: 1px;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -21,7 +21,7 @@
 	transition: all 0.2s ease-in-out;
 }
 .bmenu:hover li a{
-	text-shadow: 0px 0px 6px #fff;
+	text-shadow: 0px 0px 6px #000;
 }
 .bmenu li a:hover{
 	color: #fff;
@@ -31,6 +31,7 @@
 
 body{
 	background-color: transparent;
+  background-image: url('images/menu_bg.png');
     background-repeat: repeat, no-repeat;
     background-position: center center;
     background-attachment: fixed;

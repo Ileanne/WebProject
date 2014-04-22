@@ -38,8 +38,8 @@ body {
 /* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;
-  position: relative;
-  margin: 0 auto -40px;
+  position:static;
+  margin: 0 auto 40px;
 }
 
 footer{
@@ -70,13 +70,14 @@ animation-play-state:running;
 -webkit-animation:indexAnimation 15s linear infinite;
 -moz-animation:indexAnimation 15s linear infinite;
 animation:indexAnimation 15s linear infinite;
+transition: left 0.5s;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes indexAnimation
 {
 0%   {left:0px; top:0px;}
-50%   {left:450px; top:0px; -webkit-transform: rotate(360deg); -moz-transform: rotate(3600deg);}
+50%   {left: 450px; top:0px; -webkit-transform: rotate(360deg); -moz-transform: rotate(3600deg);}
 100%  {left:0px; top:0px; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg)}
 }
 
@@ -84,9 +85,18 @@ animation:indexAnimation 15s linear infinite;
 @keyframes indexAnimation
 {
 0%   {left:0px; top:0px;}
-50%   {left:450px; top:0px; -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+50%   {left: 100px; top:0px; -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg);}
 100%  {left:0px; top:0px; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);}
 }
+
+
+
+
+/*Prueba*/
+  document.querySelector('style').textContent +=
+     "@media screen and (min-width:400px) { body { bacground: red; }}"
+
+
 
 
 

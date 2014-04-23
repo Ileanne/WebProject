@@ -1,104 +1,101 @@
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #29292a;
-  background: linear-gradient(to bottom, rgba(46,46,46,1) 0%,rgba(20,20,20,1) 100%);
-  background-attachment: fixed;
-  color: #dadada;
+	font-family: 'Josefin Slab', Arial, sans-serif;
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #29292a;
+    background: linear-gradient(to bottom, rgba(46,46,46,1) 0%,rgba(20,20,20,1) 100%);
+    background-attachment: fixed;
+    color: #dadada;
 }
+
 h1,h2,h3,h4,h5{
-  color: #d6d6d6;
+    color: #d6d6d6;
 }
-.centered-body {
-  padding: 40px 15px;
-  text-align: center;
+
+/*Tamaño de los menús de la barra de navegación*/
+.nav-link{
+    font-size: 16pt;
 }
+
+/*Tamaño del menú que lleva a home en la barra de navegación*/
+.nav-link-large{
+    font-size: 20pt;
+}
+
+/*Espacio en blanco para index.html*/
+.blank-space{
+    margin: 10px; 
+    width: 70px; 
+    height: 100px;
+}
+
+/*Tamaño del footer*/
+.footer-large{
+    font-size: 20px;
+}
+
+/*Background del footer*/
+footer{
+    background:  rgba(0,0,0,.45);
+}
+
+/*Tamaño de la letra del menú*/
+.menu-link{
+    font-size: 18px;
+}
+
 .colored-line{
-  height: 2px;
-  background: #1c1d1d;
-  background: linear-gradient(to right,  #1c1d1d 0%,#01db0c 22%,#e203e9 64%,#460349 100%);
+    height: 2px;
+    background: #1c1d1d;
+    background: linear-gradient(to right,  #1c1d1d 0%,#01db0c 22%,#e203e9 64%,#460349 100%);
 }
 
-.navbar{
-    margin-bottom: 20px;
-}
-
+/*Margen*/
 .top-buffer{
     margin-top:20px;
 }
 
+
+
 /*Footer*/
-
-html,
-body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
-}
-
-/* Wrapper for page content to push down footer */
-/*#wrap {
-  min-height: 100%;
-  position:static;
-  margin: 0 auto 40px;
-}*/
 
 footer{
   height: 60px;
   text-align: center;
 }
 
+
 #logo{
   background-color: rgba(0,0,0,.45);
 }
 
+
+/*Animación de giro para about*/
 .anim
-{
-position:relative;
-/* Chrome, Safari, Opera */
--webkit-animation-name:indexAnimation;
--webkit-animation-duration:10s;
--webkit-animation-timing-function:ease-in-out;
--webkit-animation-delay:0s;
--webkit-animation-iteration-count:infinite;
--webkit-animation-direction:alternate;
--webkit-animation-play-state:running;
-/* Standard syntax */
-animation-name:indexAnimation;
-animation-duration:15s;
-animation-timing-function:linear;
-animation-delay:0s;
-animation-iteration-count:infinite;
-animation-direction:alternate-reverse;
-animation-play-state:running;
-/*Spin*/
--webkit-animation:indexAnimation 15s linear infinite;
--moz-animation:indexAnimation 15s linear infinite;
-animation:indexAnimation 15s linear infinite;
+{    
+/*Giro*/
+-webkit-animation:indexAnimation 35s linear infinite;
+-moz-animation:indexAnimation 35s linear infinite;
+animation:indexAnimation 35s linear infinite;
 transition: left 0.5s;
 }
 
-/* Chrome, Safari, Opera */
+/* Chrome, Safari, Opera, Firefox */
 @-webkit-keyframes indexAnimation
 {
-0%   {left:0px; top:0px;}
-50%   {left: 450px; top:0px; -webkit-transform: rotate(360deg); -moz-transform: rotate(3600deg);}
-100%  {left:0px; top:0px; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg)}
+0%   {-webkit-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+100%  {-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg)}
 }
 
-/* Standard syntax */
 @keyframes indexAnimation
 {
-0%   {left:0px; top:0px;}
-50%   {left: 100px; top:0px; -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg);}
-100%  {left:0px; top:0px; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+0%   {-webkit-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+100%  {-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);}
 }
 
 
 
-
-/*Prueba*/
-  document.querySelector('style').textContent +=
-     "@media screen and (min-width:400px) { body { bacground: red; }}"
 
 
 

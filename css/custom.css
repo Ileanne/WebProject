@@ -36,11 +36,11 @@ body {
 }
 
 /* Wrapper for page content to push down footer */
-#wrap {
+/*#wrap {
   min-height: 100%;
   position:static;
   margin: 0 auto 40px;
-}
+}*/
 
 footer{
   height: 60px;

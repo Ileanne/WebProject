@@ -2,7 +2,7 @@ var canvas = document.getElementById("myCanvas");
 var cc = canvas.getContext("2d");
 
 var img_aside = new Image();
-img_aside.src = "300x400.jpg";
+img_aside.src = "../images/300x400.jpg";
 
 img_aside.onload = function(){
     cc.drawImage(img_aside,0,0);
@@ -21,7 +21,7 @@ img_aside.onload = function(){
 
 function color(event){
 var img_aside = new Image();
-img_aside.src = "300x400.jpg";
+img_aside.src = "../images/300x400.jpg";
 
 img_aside.onload = function(){
     cc.drawImage(img_aside,0,0);
@@ -41,7 +41,7 @@ img_aside.onload = function(){
 
 function byn(event){
 var img_aside = new Image();
-img_aside.src = "300x400.jpg";
+img_aside.src = "../images/300x400.jpg";
 
 img_aside.onload = function(){
     cc.drawImage(img_aside,0,0);

@@ -1,0 +1,19 @@
+#gallery{
+  margin-top: 5px;
+  padding: 20px;
+}
+
+
+.row{
+  padding:5px;
+}
+
+
+@media (max-width: 992px){
+  .row{
+    padding: 4px;
+  }
+  .col-md-4{
+    margin-top: 10px;
+  }
+}

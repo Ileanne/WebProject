@@ -45,10 +45,9 @@ footer{
     font-size: 18px;
 }
 
-.colored-line{
-    height: 2px;
-    background: #1c1d1d;
-    background: linear-gradient(to right,  #1c1d1d 0%,#01db0c 22%,#e203e9 64%,#460349 100%);
+/*Tamaño de la letra de Article*/
+.article-size{
+    font-size: 20px;
 }
 
 /*Margen*/

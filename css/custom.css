@@ -13,6 +13,12 @@ h1,h2,h3,h4,h5{
     color: #d6d6d6;
 }
 
+/*Fondo lateral izquierdo*/
+#bg{
+  position: fixed;
+  top:0;
+  left:0;
+}
 /*Tamaño de los menús de la barra de navegación*/
 .nav-link{
     font-size: 16pt;
@@ -25,8 +31,8 @@ h1,h2,h3,h4,h5{
 
 /*Espacio en blanco para index.html*/
 .blank-space{
-    margin: 10px; 
-    width: 70px; 
+    margin: 10px;
+    width: 70px;
     height: 100px;
 }
 
@@ -80,7 +86,7 @@ footer{
 
 /*Animación de giro para about*/
 .anim
-{    
+{
 /*Giro*/
 -webkit-animation:indexAnimation 35s linear infinite;
 -moz-animation:indexAnimation 35s linear infinite;

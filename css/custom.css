@@ -30,6 +30,13 @@ h1,h2,h3,h4,h5{
     height: 100px;
 }
 
+/*Espacio en blanco para multimedia.html*/
+.blank-space-content{
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+}
+
 /*Tamaño del footer*/
 .footer-large{
     font-size: 20px;
@@ -42,13 +49,23 @@ footer{
 }
 
 /*Tamaño de la letra del menú*/
-.menu-link{
+.menu-link{ 
+    font-size: 18px;
+}
+
+/*Tamaño de la letra de los links*/
+.link{ 
     font-size: 18px;
 }
 
 /*Tamaño de la letra de Article*/
 .article-size{
     font-size: 20px;
+}
+
+/*Contenido*/
+.content{
+    text-align: center;
 }
 
 /*Margen*/

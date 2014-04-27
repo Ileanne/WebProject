@@ -25,8 +25,8 @@ h1,h2,h3,h4,h5{
 
 /*Espacio en blanco para index.html*/
 .blank-space{
-    margin: 10px; 
-    width: 70px; 
+    margin: 10px;
+    width: 70px;
     height: 100px;
 }
 
@@ -37,7 +37,8 @@ h1,h2,h3,h4,h5{
 
 /*Background del footer*/
 footer{
-    background:  rgba(0,0,0,.45);
+    background:  rgba(0,0,0,1);
+    position: relative;
 }
 
 /*Tamaño de la letra del menú*/
@@ -79,7 +80,7 @@ footer{
 
 /*Animación de giro para about*/
 .anim
-{    
+{
 /*Giro*/
 -webkit-animation:indexAnimation 35s linear infinite;
 -moz-animation:indexAnimation 35s linear infinite;

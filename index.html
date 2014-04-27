@@ -9,80 +9,65 @@
     <title>Tatto Arte</title>
 
     <!--CSS-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="css/custom.css" rel="stylesheet">
-
-    <link href="css/bootstrap-lightbox.min.css">
-
-    <link rel="stylesheet" type="text/css" href="css/menu.css" />
-
-    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/font.css" rel="stylesheet" type="text/css" >
 
 </head>
 
-
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
 
-    <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <a class="navbar-brand nav-link-large" href="index.html">Tattoo Arte</a>
-                </div>
-
-                <div class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="html/about.html" class="nav-link"> <span class="glyphicon glyphicon-user"></span> About</a>
-                        </li>
-                        <li>
-                            <a href="html/contact.html" class="nav-link"> <span class="glyphicon glyphicon-envelope"></span> Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+                <a class="navbar-brand nav-link-large" href="index.html">Tattoo Arte</a>
             </div>
-        </nav>
 
-        <div class="container top-buffer">
-            
-            <!--HEADER-->
-            <header class="col-md-12 top-buffer" id="logo">
+            <div class="navbar-collapse collapse">
 
-                <img src="images/logo.png" class="center-block img-responsive">
-                
-            </header>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="html/about.html" class="nav-link"> <span class="glyphicon glyphicon-user"></span> About</a>
+                    </li>
+                    <li>
+                        <a href="html/contact.html" class="nav-link"> <span class="glyphicon glyphicon-envelope"></span> Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
+    <!--HEADER-->
+    <header class="container top-buffer">
 
-        <div class="blank-space"></div>
-
-
-        <div class="container-fluid top-buffer top-centered content">
-
-            <ul class="bmenu">
-                <li><a href="html/gallery.html">Galería</a>
-                </li>
-                <li><a href="html/care.html">Cuidados</a>
-                </li>
-                <li><a href="html/multimedia.html">Multimedia</a>
-                </li>
-            </ul>
+        <div class="col-md-12 top-buffer" id="logo">
+            <img src="images/logo.png" class="center-block img-responsive">
         </div>
+    </header>
 
-        <div class="blank-space"></div>
+    <div class="blank-space"></div>
 
-    </div>
+    <section class="container-fluid top-buffer top-centered content">
+        <ul class="bmenu">
+            <li><a href="html/gallery.html">Galería</a>
+            </li>
+            <li><a href="html/care.html">Cuidados</a>
+            </li>
+            <li><a href="html/multimedia.html">Multimedia</a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="blank-space"></div>
+
 
     <!--FOOTER-->
     <footer>
@@ -96,8 +81,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/bootstrap-lightbox.min.js"></script>
-    
+
 </body>
-
-
 </html>

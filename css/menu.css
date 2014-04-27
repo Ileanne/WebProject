@@ -1,3 +1,21 @@
+/*Centrado vertical del menu*/
+#main-menu{
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+  @media (max-height: 600px){
+    #main-menu{
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+  }
+  @media (max-height: 400px){
+    #main-menu{
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+  }
+
 .bmenu{
     padding: 0px;
     margin: 0 0 10px 0;
@@ -6,6 +24,12 @@
 .bmenu li{
     font-size: 50px;
     display: block;
+}
+  /*Tamaño de la letra al escalar horizontalmente*/
+  @media (max-width: 700px){
+    .bmenu li{
+      font-size: 30px;
+    }
 }
 .bmenu li a{
 	color: transparent;
@@ -51,7 +75,6 @@ a{
 
 .content{
 	position:relative;
-    width:580px;
     margin: 0 auto;
 }
 

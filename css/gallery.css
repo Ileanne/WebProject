@@ -3,7 +3,10 @@
   padding: 20px;
 }
 
-
+img{
+  display: block;
+  margin: auto;
+}
 .row{
   padding:5px;
 }

@@ -44,6 +44,7 @@ h1,h2,h3,h4,h5{
   box-shadow: 0px 0px 30px 0px rgba(0,0,0,1);
   border-radius: 20px;
   padding-bottom:10px;
+  padding-top:20px;
 }
 /*Tamaño de los menús de la barra de navegación*/
 .nav-link{
@@ -80,12 +81,12 @@ footer{
 }
 
 /*Tamaño de la letra del menú*/
-.menu-link{ 
+.menu-link{
     font-size: 18px;
 }
 
 /*Tamaño de la letra de los links*/
-.link{ 
+.link{
     font-size: 18px;
 }
 

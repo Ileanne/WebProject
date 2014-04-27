@@ -15,12 +15,21 @@ h1,h2,h3,h4,h5{
 
 /*Margen del header*/
 #logo{
+  background-color: rgba(34,34,34,1);
   margin-top: 25px;
+  position: relative;
 }
 
 /*Separar iconos del texto*/
 h1 span, h2 span{
   margin-right:20px;
+}
+
+/*Fondo lateral izquierdo*/
+#bg{
+  position: fixed;
+  top:0;
+  left:0;
 }
 
 /*Tamaño de los menús de la barra de navegación*/
@@ -47,7 +56,7 @@ h1 span, h2 span{
 
 /*Background del footer*/
 footer{
-    background:  rgba(0,0,0,1);
+    background:  rgba(34,34,34,1);
     position: relative;
 }
 
@@ -80,11 +89,6 @@ footer{
 footer{
   height: 60px;
   text-align: center;
-}
-
-
-#logo{
-  background-color: rgba(0,0,0,.45);
 }
 
 

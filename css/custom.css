@@ -18,6 +18,11 @@ h1,h2,h3,h4,h5{
   margin-top: 25px;
 }
 
+/*Separar iconos del texto*/
+h1 span, h2 span{
+  margin-right:20px;
+}
+
 /*Tamaño de los menús de la barra de navegación*/
 .nav-link{
     font-size: 16pt;

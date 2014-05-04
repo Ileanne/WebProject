@@ -25,6 +25,7 @@
     font-size: 50px;
     display: block;
 }
+
   /*Tamaño de la letra al escalar horizontalmente*/
   @media (max-width: 700px){
     .bmenu li{

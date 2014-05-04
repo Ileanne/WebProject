@@ -149,5 +149,8 @@ transition: left 0.5s;
     width: 100%;
     height: 100%;
 }
-- See more at: http://avexdesigns.com/responsive-youtube-embed/#sthash.2CZr79FJ.dpuf
 
+/*Tamaño del contenedor de contacto*/
+.contact{
+    width: 600px;
+}

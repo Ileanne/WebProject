@@ -188,3 +188,18 @@ transition: left 0.5s;
     color: #FFF;
     border-color: #444;
 }
+
+input.form-control:focus{
+    box-shadow: 0 0 10px rgba(255,255,255,100);
+    border-color: #FFF;
+}
+
+textarea.form-control:focus{
+    box-shadow: 0 0 10px rgba(255,255,255,100);
+    border-color: #FFF;
+}
+
+button.btn-default:focus{
+    box-shadow: 0 0 10px rgba(255,255,255,100);
+    border-color: #FFF;     
+}

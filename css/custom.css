@@ -173,6 +173,12 @@ transition: left 0.5s;
 
 @media (max-width: 500px){
   .contact{
+    width: 300px;
+  }
+}
+
+@media (max-width: 350px){
+  .contact{
     width: 200px;
   }
 }

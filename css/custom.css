@@ -154,3 +154,19 @@ transition: left 0.5s;
 .contact{
     width: 600px;
 }
+
+.contact-label{
+    font-size: 15px;
+}
+
+@media (max-width: 992px){
+  .contact{
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px){
+  .contact{
+    width: 200px;
+  }
+}

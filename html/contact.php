@@ -72,20 +72,29 @@
             exit();
         }
         
-        $stmt = $dbh->prepare("INSERT INTO contact (nombre, email, asunto, mensaje) VALUES (:name, :email, :topic, :message)");
-        $stmt->bindParam(':name', $name);
-        $stmt->bindParam(':email', $email);
-        $stmt->bindParam(':topic', $topic);
-        $stmt->bindParam(':message', $message);
-        
-        
+        if (!($sentencia = $mysqli->prepare("INSERT INTO contact(nombre, email, asunto, mensaje) VALUES (?)"))) {
+    echo "Falló la preparación";
+        }
 
-        echo  $name . ".<br />";
-        echo  $email . ".<br />";
-        echo  $topic . ".<br />";
-        echo  $message . ".<br />";
-        echo "Si se manda";
-    ?>
+        $name = $_POST['nombre'];
+        $email = $_POST['email'];
+        $topic = $_POST['asunto'];
+        $message = $_POST['mensaje'];
+
+
+        if (!$sentencia->bind_param($name,$email,$topic,$message)){
+    echo "Falló la vinculación de parámetros";
+        }
+        
+        if (!$sentencia->execute()) {
+    echo "Falló la ejecución";
+        }
+        
+        $sentencia->close();
+        
+       $resultado = $mysqli->query("SELECT id FROM contact");        
+
+        ?>
     
     </section>
 

@@ -63,10 +63,22 @@
     <section  id="contact" class="main-content container contact">
 
     <?php
-        $name = $_POST['nombre'];
-        $email = $_POST['email'];
-        $topic = $_POST['asunto'];
-        $message = $_POST['mensaje'];
+        error_reporting(E_ERROR);
+        
+        $mysqli = new mysqli("localhost", "root", "", "contact");
+        
+        if ($mysqli->connect_errno) {
+            printf("<h3>Error al intentar conectarse a la base de datos.<h3>");
+            exit();
+        }
+        
+        $stmt = $dbh->prepare("INSERT INTO contact (nombre, email, asunto, mensaje) VALUES (:name, :email, :topic, :message)");
+        $stmt->bindParam(':name', $name);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':topic', $topic);
+        $stmt->bindParam(':message', $message);
+        
+        
 
         echo  $name . ".<br />";
         echo  $email . ".<br />";

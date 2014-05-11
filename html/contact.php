@@ -67,13 +67,15 @@
         
         $mysqli = new mysqli("localhost", "root", "", "contact");
         
+        $mysqli->set_charset("utf8");
+        
         if ($mysqli->connect_errno) {
             printf("<h3>Error al intentar conectarse a la base de datos.<h3>");
             exit();
         }
         
-        if (!($sentencia = $mysqli->prepare("INSERT INTO contact(nombre, email, asunto, mensaje) VALUES (?)"))) {
-    echo "Falló la preparación";
+        if (!($insert = $mysqli->prepare("INSERT INTO contact(nombre, email, asunto, mensaje) VALUES (?,?,?,?)"))) {
+    echo "Falló la preparación.";
         }
 
         $name = $_POST['nombre'];
@@ -82,19 +84,22 @@
         $message = $_POST['mensaje'];
 
 
-        if (!$sentencia->bind_param($name,$email,$topic,$message)){
-    echo "Falló la vinculación de parámetros";
+        if (!$insert->bind_param(ssss,$name,$email,$topic,$message)){
+    echo "Falló la vinculación de parámetros.";
         }
         
-        if (!$sentencia->execute()) {
-    echo "Falló la ejecución";
+        if (!$insert->execute()) {
+    echo "Falló la ejecución.";
         }
         
-        $sentencia->close();
+        $insert->close();
         
-       $resultado = $mysqli->query("SELECT id FROM contact");        
+        print("<h3>El mensaje ha sido enviado con éxito.</h3>");     
 
         ?>
+        
+        <button type="submit" class="btn btn-default" onClick=" window.location.href='contact.html' ">Continuar</button>
+        
     
     </section>
 

@@ -186,6 +186,7 @@ transition: left 0.5s;
 #text_area{
     max-width: 570px;
     min-width: 570px;
+    min-height: 100px;
 }
 
 .grey-color{
